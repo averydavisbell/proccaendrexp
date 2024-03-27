@@ -8,3 +8,10 @@ https://doi.org/10.1038/s41467-022-31208-4
 
 Cite the app:
 description currently in development for MicroPublicationBiology; see https://wildworm.biosci.gatech.edu/
+
+## Script details
+- `downloadworkflow`: directory with nextflow workflow to use SRAToolkit to download the FASTQs, associated config, files used to run it
+- `strainspectranscriptome`: directory with nextflow workflow that generates strain-specific salmon indexes. See also workflows in repo https://github.com/averydavisbell/wormstrainrnaiexpr/
+- `strainspecsalmon`: directory with nextflow workflow running strain-specific salmon quantification. See also workflows in repo https://github.com/averydavisbell/wormstrainrnaiexpr/
+- `cendrrnaseq2022paper_salm2vst.R`: goes from salmon quants to per-gene normalized quantifications.
+Run with `--help` to see required inputs.
